@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <picture class="logo">
+                <img src="/img/logo.svg">
+            </picture>
+        </header>
+
+        <picture class="jumbo">
+
+
+            <div class="transparencia">
+                <div class="mensaje">
+                    <h1> Gana dinero <br>guardando equipaje a<br> viajeros como tú</h1>
+
+                    <picture class="logoApp">
+                        <img src="/img/app-store.svg" class="imgResponsive">
+                    </picture>
+                    <picture class="logoApp">
+                        <img src="/img/google-play.svg" class="imgResponsive">
+                    </picture>
+
+                </div>
+            </div>
+
+        </picture>
+
+        <section class="funciona">
+            <p class="fun"> ¿Cómo funciona?</p class="fun">
+            <div class="articulos">
+                <article class="articulo">
+                    <div class="botones">
+                        1
+                    </div>
+                    <p class="alta"> Date de alta</p>
+                   <p class="texto"> Una olla de algo más vaca que carnero,<br>
+                        salpicón de más noches, duelos y quebrantos<br> los sábados.</p>
+                </article>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <article class="articulo">
+                    <div class="botones">
+                        2
+                    </div>
+                    <p class="alta"> Date de alta</p>
+                    <p class="texto">Una olla de algo más vaca que carnero,<br>
+                         salpicón de más noches, duelos y quebrantos <br>los sábados.</p>
+                </article> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <article class="articulo">
+                    <div class="botones">
+                        3
+                    </div>
+                    <p class="alta"> Date de alta</p>
+                   <p class="texto">Una olla de algo más vaca que carnero, <br>
+                    salpicón de más noches, duelos y quebrantos<br> los sábados.</p>
+                </article>
+            </div>
+        </section>
+        <div class="divMovilFormulario">
+            <picture class="movil">
+                <img src="/img/iPhoneX@2x.png" class=" imgResponsive">
+            </picture>
+            <div class="divFormulario">
+                <form class="formulario" method="post" action="{{ path('registro') }}">
+                    <p class="demo"> Solicita una demo</p>
+                    <label class="labelFormulario"> Nombre</label>
+                    <input name="nombre" type="text" placeholder="Vincent Chase" class="camposFormularios" required>
+                    <label class="labelFormulario">Email</label>
+                    <input name="email" type="email" placeholder="vicent@mga.com" class="camposFormularios"required>
+                    <label class="labelFormulario"> Ciudad</label>
+                    <select name="ciudad" class="camposFormularios">
+                        <option value="Madrid"> Madrid</option>
+                        <option value="Bacelona"> Barcelona</option>
+                        <option value="Sevilla"> Sevilla</option>
+                    </select>
+                    <input type="checkbox" name="checkbox" id="checkBox">
+                    Aceptas la <a href="#">política de privacidad.</a><br>
+
+                    <input type="submit" value="ENVIAR" id="enviar">
+
+                </form>
+            </div>
+        </div>
+        <section id="guardianes">
+
+
+            <p class="opi"> Opiniones de otros guardianes</p>
+             <div class="dejacoment"><strong> Deja tu comentario <a href="{{ path('comentarios') }}"> aquí</a> mismo.</strong></div>
+            <section class="opiniones">
+               
+             {% for opinion in variable %}
+
+                <article class="mi-opinion">  
+
+                  <div class="opinion">{{opinion.texto}}</div>
+                  <div class="firma">
+                      <p>{{opinion.autor}}</p>
+                      <p>{{opinion.ciudad}}</p>
+                
+             
+                 </div>
+                </article>
+           
+            
+                
+           {% endfor %}     
+            
+        </section>
+
+        <footer class="footer">
+
+            <picture class="logoFooter">
+                <img src="/img/logo.svg" class=" imgResponsive">
+
+            </picture>
+            <div class="corazon">
+                <p> Hecho con <span style="font-size: 25px;color:red">&hearts; </span>en Madrid </p>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

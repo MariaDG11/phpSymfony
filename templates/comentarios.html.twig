@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+ <header>
+            <picture class="logo">
+                <img src="/img/logo.svg">
+            </picture>
+        </header>
+
+<div class="divFormulary">
+   <form class="formulari" method="post" action="{{ path('opinion') }}">
+            <label class="labelFormulario"> Opinión:</label>
+                    <input name="texto" type="text"  class="camposFormularyo" required placeholder:"max 40 caracteres">
+                    <label class="labelFormulario">Nombre y apellido:</label>
+                    <input name="autor" type="text"  class="camposFormulary" required>
+                    <label class="labelFormulario"> Ciudad:</label>
+                    <input name="ciudad" type="text"  class="camposFormulary" required>
+
+             <input type="submit" value="ENVIAR" id="enviar">
+
+             </form>
+             </div>
+               <footer class="footer">
+
+            <picture class="logoFooter">
+                <img src="/img/logo.svg" class=" imgResponsive">
+
+            </picture>
+            <div class="corazon">
+                <p class="corazon2"> Hecho con <span style="font-size: 25px;color:red">&hearts; </span>en Madrid </p>
+            </div>
+        </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Catamaran, sans-serif;
+  margin: 0;
+}
+
+header {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+}
+
+.logo {
+  align-items: flex-start;
+  align-self: center;
+  padding-left: 15vw;
+}
+
+.jumbo {
+  background-image: url("/img/jumbo@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  margin-bottom: 10vh;
+}
+
+.transparencia {
+  height: 100%;
+  width: 30%;
+  background-color: rgb(0, 0, 0, 0.5);
+  align-items: flex-start;
+  display: flex;
+  margin-left: 10vw;
+}
+
+.mensaje {
+  margin-top: 10vh;
+  align-self: center;
+  align-items: flex-start;
+  margin-left: 10%;
+}
+
+.logoApp {
+  display: inline-block;
+  width: 35%;
+  margin: 2vh;
+}
+
+h1 {
+  color: white;
+  width: 100%;
+  font-weight: normal;
+  margin-left: 10%;
+}
+.imgResponsive {
+  width: 100%;
+  height: 100%;
+}
+
+.funciona {
+  text-align: center;
+  font-size: 1.3em;
+}
+.fun {
+  font-size: 3vh;
+}
+.articulos {
+  display: flex;
+  margin-top: 2vh;
+  margin-left: 28vh;
+}
+.articulo {
+  margin-top: 10vh;
+}
+
+.alta {
+  margin: 3vh 0;
+  font-size: 30px;
+}
+.texto {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.botones {
+  color: white;
+  background: linear-gradient(to top, rgb(255, 171, 14), rgb(255, 220, 65));
+  display: inline-block;
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  font-size: 30px;
+}
+
+.movil {
+  display: flex;
+  width: 18vw;
+  height: auto;
+}
+
+.formulario {
+  border: rgb(255, 201, 25, 0.808) solid 1px;
+  height: 48vh;
+}
+
+.divFormulario {
+  display: flex;
+  width: 30vw;
+  margin-top: 5%;
+}
+.camposFormularios {
+  font-size: 1em;
+  width: 90%;
+  height: 7%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.labelFormulario {
+  font-size: 1em;
+  margin-left: 5%;
+}
+
+.divMovilFormulario {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+}
+
+.demo {
+  margin-top: 5%;
+  font-size: 1.5em;
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+#enviar {
+  background: linear-gradient(to top, rgb(243, 143, 12), rgb(255, 215, 35));
+  font-size: 22px;
+  justify-self: flex-end;
+  align-self: flex-end;
+  width: 30%;
+  height: 10%;
+  background-color: goldenrod;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+#checkBox {
+  margin-top: 1%;
+  margin-left: 5%;
+}
+
+#guardianes {
+  display: inline;
+}
+
+.opi {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 2em;
+}
+
+.opiniones {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+}
+
+.opinion {
+  border: rgba(255, 201, 25, 0.808) solid 1px;
+
+  padding: 5%;
+  width: 38vh;
+}
+
+.firma {
+  margin: 4% 8% 0 8%;
+}
+
+.logoFooter {
+  display: flex;
+  width: 15vw;
+}
+
+.footer {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #818e97;
+  height: 20vh;
+  justify-content: center;
+}
+
+/* Query para pantallas más pequeñas*/
+
+@media (max-width: 800px) {
+  header {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .jumbo {
+    background-image: url("/img/jumbo@1x.png");
+
+    height: 50vh;
+  }
+
+  .transparencia {
+    width: 60%;
+    margin-left: 15%;
+  }
+
+  .mensaje {
+    margin-top: 10vh;
+    align-self: center;
+    align-items: flex-start;
+    margin-left: 1%;
+  }
+
+  .fun {
+    font-size: 3vh;
+  }
+  .articulos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+
+  .movil {
+    display: flex;
+    width: 50%;
+    height: auto;
+  }
+
+  .formulario {
+    border: rgba(255, 201, 25, 0.808) solid 1px;
+    height: 45vh;
+  }
+
+  .divFormulario {
+    display: flex;
+    width: 80%;
+    margin-top: 5%;
+  }
+
+  .divMovilFormulario {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .opiniones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .opinion {
+    border: rgba(255, 199, 16, 0.698) solid 1px;
+
+    padding: 5%;
+    width: 38vh;
+  }
+
+  .firma {
+    margin: 4% 8% 0 8%;
+  }
+
+  .logoFooter {
+    display: flex;
+    width: 35vw;
+  }
+
+  .footer {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #818e97;
+    height: 20vh;
+    justify-content: center;
+  }
+}

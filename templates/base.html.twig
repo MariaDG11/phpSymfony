@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome to my page!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+
+        {% block header %}
+        <header>
+    
+       <h1> Página inicial </h1>
+
+        </header>
+        
+        {% endblock %}
+        {% block nav %} <a href="#">Quién soy |</a> &nbsp; <a href="#">Portfolio |</a> &nbsp; <a href="#">Contáctame </a>{% endblock %}
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+        
+
+    </body>
+</html>
